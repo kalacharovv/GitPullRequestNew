@@ -1,3 +1,4 @@
+![Изображение GIT](https://thumb.tildacdn.com/tild6430-6566-4465-b436-343639616430/-/resize/760x/-/format/webp/git.png)
 ## Основные команды Git 1-го семинара
 
 > **git init** - создание локального репозитория
