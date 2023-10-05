@@ -43,6 +43,8 @@
 
 It is my little ~~pony~~ problem
 
-[Это моя проблема](conflict.jpg)
+[Это моя проблема it is my little problem](conflict.jpg)
 
-![Это моя проблема it is my little problem](conflict.jpg)
+![Это моя проблема it is my problem](conflict.jpg)
+
+Почему в строках 46 и 48 всё именно так? В строке 46 нет фото потому что нет знака "!", но почему в строке 48 нет текста
