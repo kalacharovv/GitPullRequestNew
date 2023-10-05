@@ -33,3 +33,5 @@
 > **git pull** – получение изменений и слияние с локальной версией
 
 > **git push** – отправляет локальную версию репозитория на внешний
+
+![TVR Giffith](https://www.w3docs.com/uploads/media/default/0001/03/3f26b30cc1dbda3424ceef3ab4977149906a0c58.png)
