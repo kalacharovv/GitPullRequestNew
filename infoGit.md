@@ -41,4 +41,8 @@
 
 > **git push – отправляет локальную версию репозитория на внешний
 
+It is my little ~~pony~~ problem
+
 [Это моя проблема](conflict.jpg)
+
+![Это моя проблема it is my little problem](conflict.jpg)
