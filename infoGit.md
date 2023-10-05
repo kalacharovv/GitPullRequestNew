@@ -1,34 +1,98 @@
-## Основные команды Git 1-го семинара
+# Git Instruction   
 
-> **git init** - создание локального репозитория
+## Introduction
 
-> **git status** - получить информацию от git о его текущем состоянии
+Git is a fast distributed revision control system. It allows software developers to cooperate in their work and use siple commands to share their work results with co-workers.
 
-> **git add** - добавить файл или файлы к следующему коммиту
+You can always use **git --help** to get the list of the commands, but lets talk about the workflow.
+## 1. Initialize git repository
 
-> **git commit** -m “message” – создание коммита.
+To initialize a new git repository create a new folder, enter a commandline in this folder and call **_git init_** command.
+This will create a hidden _.git_ folder with multiple usefull files inside.
 
-> **git log** – вывод на экран истории всех коммитов с их хеш-кодами
+## 2. Adding changes to your project
 
-> **git checkout** – переход от одного коммита к другому
+After adding some file changes in your project  (creating files with some text inside) you are ready to make your first commit.
+for that purpose you will need two more commands:
 
-> **git checkout master** – вернуться к актуальному состоянию и продолжить работу
+* **_git add_**
+* **_git commit_**
 
-> **git diff** – увидеть разницу между текущим файлом и закоммиченным файлом
+### git add _filename_
+Selects the files to commit, using _-A_ key after command allows to add all files to commit
+### git commit 
+adds a new coomit cord to your work log
+Amonk multiple additional keys one of the most important is _-m_, which adds a commit message, which is essential for understanding which changes were made.
+
+more advanced _-am_flag allows to combine _git add -a_ into _git commit_ command and use only one instead of two.
+
+## 3. Repository status ang work log
+
+### git status
+a usefull commang to get repository status with list of modfied files.
+
+### git log
+
+shows the actual repository log with all commits
+
+## 4. Branches
+
+Branches are usefull for adding some changes to existing project without a possibility to break it.
+The main branch of the project is called **_master_**. Other branches usually named after the expected modifications, taskID, etc.
+a new branch creates a copy of the actual master (or trunk).
+
+A single command with various keys and options is used for working with branches:
+### git branch
+without arguments chows the list of available branches
+
+### git branch _name_
+creates a new branch. Sending this command with_-D_ key before branch name removes this branch (e.g _git branch -D uselessbranch_)
+
+## 5. Moving between branches
+after a branch is created you need jump to it (or _checkout_ it to your workspace). For that purpose you need to use 
+
+### git checkout _branch_name_
+after that you are ready to make more changes that will not affect "main" code.
+
+_**DO NOT FORGET to save files, add them to commit and commit!!!**_
+
+_This will save you much time :)_
 
 
-## Основные команды Git 2-го семинара
+## 6. Adding changes to MASTER
 
-> git branch **<branch_name>** - создать новую ветку с именем branch_name
+After the changes in separate branch are made and you are sure they are ok you need to add them to your "main".
 
-> **git checkout  -b <branch_name>** - создание ветки и переход к ней
+For that purpose you need to jump back to trunk using _git checkout master_ commang and then call 
 
-> **git commit -am “message”** – добавление файлов в отслеживание и       создание коммита.
-> **git log --graph** - вывод на экран истории всех коммитов с их хеш-кодами в древовидной форме
+### git merge _branch.name_
 
-## Основные команды Git 3-го семинара
+Git is smart so it will try to merge the changes without your help.
+This works well when there are no conflicts between the branches.
+If the conflicts occur you will need to merge the changes manually. Git extensin for VSCode allows you no make it easy and fast.
 
-> **git clone <url-адрес репозитория>** – клонирование внешнего репозитория на  локальный ПК
+_**DO NOT FORGET to save files, add them to commit and commit!!!**_
+
+_This will save you much time :)_
+
+## Working with remote repo
+As a first step you need to create an account on some cloud-based git sevice, e.g. [GitHub](https://github.com).
+It contains thousands of user repos from all over the world.
+
+Basically you can download contens of someone's repository from github or any other remote repository. But working with remote repo has it's specific rules. You can't just commit and push your changes to someone's repoitory. 
+
+At first you need to login into git and fork a repository. This will create a copy of the user's repository within your github account. Ater that you can start working with it.
+Fork sign looks like this: ![fork](img/fork.jpg)
+
+After forking a repository you can clone forked repository (not the original one) to your pc and start working with it:
+ 
+ ### git clone \<repository url>
+
+ after that you can branch the repository using _git branch \<branch.name>_ 
+ _git checkout_ new branch and make some changes
+
+ After that you commit the changes you have made.
+
 
 > **git pull** – получение изменений и слияние с локальной версией
 
