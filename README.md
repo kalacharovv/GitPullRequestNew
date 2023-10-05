@@ -81,7 +81,7 @@ _This will save you much time :)_
 As a first step you need to create an account on some cloud-based git sevice, e.g. [GitHub](https://github.com).
 It contains thousands of user repos from all over the world.
 
-Basically you can download contens of someone's repository from github or any other remote repository. But working with remote repo has it's specific rules. You can't just commit and push your changes to someone's repoitory. 
+Basically, you can download contens of someone's repository from GitHub or any other remote repository. But working with remote repo has it's specific rules. You can't just commit and push your changes to someone's repoitory. 
 
 At first you need to login into git and fork a repository. This will create a copy of the user's repository within your github account. Ater that you can start working with it.
 Fork sign looks like this: ![fork](img/fork.jpg)
@@ -98,7 +98,9 @@ After forking a repository you can clone forked repository (not the original one
  You can send the local changes to remote repository by using 
 > git push
 
+**NOTE** that you push the branch that you are currently located. 
+
 You can also update your local repository with uptodate from remote repository changes using 
 > git pull
 
-This command is very usefull when several developers wor with the same project.
+This command hepls to update your working copy to the latest version, e.g when several developers work with the same project.
