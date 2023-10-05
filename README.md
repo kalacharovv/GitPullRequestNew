@@ -77,7 +77,7 @@ _**DO NOT FORGET to save files, add them to commit and commit!!!**_
 
 _This will save you much time :)_
 
-## Working with remote repo
+## 7. Working with remote repo
 As a first step you need to create an account on some cloud-based git sevice, e.g. [GitHub](https://github.com).
 It contains thousands of user repos from all over the world.
 
