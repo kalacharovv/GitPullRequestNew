@@ -33,3 +33,6 @@
 > **git pull** – получение изменений и слияние с локальной версией
 
 > **git push** – отправляет локальную версию репозитория на внешний
+
+
+![картинка](https://sun9-88.userapi.com/impg/vkz7_3X0_IkPc5A_t-BvCFvLUyX55ZS29DcCPw/_ZUl5xFsBUg.jpg?size=1200x630&quality=96&sign=3d08cfa596aa668f389148617d12f717&c_uniq_tag=FtibbxmrgT1aysASKkDJNNdI9mFH2ASy6qf3Faacglg&type=album)
