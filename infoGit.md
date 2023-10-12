@@ -50,4 +50,4 @@
 * cd (change directory) - данная команда позволяет перемещаться между папками внутри нашего проекта.
 * git merge --abort - позволяет прервать (отменить) слияние.
 
-![Даже котик хочет учиться в GeekBrains](Kot-smotrit-na-ekran-noutbuka.jpg)
+![Даже котик хочет учиться в GeekBrains](Kot-smotrit-na-ekran-noutbuka.jpg).
